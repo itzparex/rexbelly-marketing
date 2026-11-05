@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rexbelly Zipagan — Customer &amp; Lifecycle Marketing</title>
+<meta name="description" content="Marketing portfolio of Rexbelly P. Zipagan: lifecycle email programs, product launch campaigns and customer-focused marketing for e-commerce brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --mist: #F2F4F1;
+    --paper: #FFFFFF;
+    --ink: #17212B;
+    --muted: #56626C;
+    --rule: #CDD5D0;
+    --teal: #0E6B66;
+    --teal-soft: #DDEBE8;
+    --amber: #D99A1E;
+    --sans: "Familjen Grotesk", system-ui, sans-serif;
+    --serif: "Newsreader", Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--mist);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* Top bar */
+  .top { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; font-family: var(--sans); font-size: 0.95rem; }
+  .top strong { font-weight: 600; }
+  .top nav { display: flex; gap: 22px; flex-wrap: wrap; }
+  .top nav a { color: var(--ink); text-decoration: none; }
+  .top nav a:hover { color: var(--teal); }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; padding: 48px 0 88px; }
+  .hero h1 {
+    font-family: var(--sans); font-weight: 600; letter-spacing: -0.03em;
+    font-size: clamp(2.5rem, 5.4vw, 4.3rem); line-height: 1.02; margin: 0 0 24px;
+  }
+  .hero p.lede { font-size: 1.25rem; color: var(--muted); max-width: 34ch; margin: 0 0 32px; }
+  .actions { display: flex; gap: 14px; flex-wrap: wrap; font-family: var(--sans); }
+  .btn { display: inline-block; padding: 13px 22px; border-radius: 999px; text-decoration: none; font-weight: 500; }
+  .btn-primary { background: var(--ink); color: var(--mist); }
+  .btn-primary:hover { background: var(--teal); }
+  .btn-ghost { border: 1.5px solid var(--ink); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* The flow: the signature element */
+  .flow { position: relative; padding-left: 36px; font-family: var(--sans); }
+  .flow::before {
+    content: ""; position: absolute; left: 11px; top: 14px; bottom: 120px;
+    width: 2px; background: repeating-linear-gradient(var(--teal) 0 6px, transparent 6px 12px);
+  }
+  .step { position: relative; background: var(--paper); border: 1px solid var(--rule); border-radius: 14px; padding: 16px 18px; margin-bottom: 16px; }
+  .step::before {
+    content: ""; position: absolute; left: -31px; top: 18px; width: 14px; height: 14px;
+    border-radius: 50%; background: var(--mist); border: 3px solid var(--teal);
+  }
+  .step .when { font-size: 0.82rem; color: var(--muted); }
+  .step .subj { font-weight: 600; font-size: 1.02rem; margin-top: 2px; }
+  .step .why { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+  .result {
+    position: relative; background: var(--ink); color: var(--mist);
+    border-radius: 14px; padding: 20px 22px; margin-top: 8px;
+  }
+  .result::before {
+    content: ""; position: absolute; left: -33px; top: 22px; width: 18px; height: 18px;
+    border-radius: 50%; background: var(--amber);
+  }
+  .result .big { font-size: 3rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; color: var(--amber); }
+  .result .big small { font-size: 1.1rem; font-weight: 500; color: var(--mist); letter-spacing: 0; margin-left: 6px; }
+  .result p { margin: 8px 0 0; font-size: 0.95rem; color: #C9D3DB; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .step, .result { opacity: 0; transform: translateY(8px); animation: in 0.5s ease forwards; }
+    .step:nth-child(1) { animation-delay: 0.15s; }
+    .step:nth-child(2) { animation-delay: 0.45s; }
+    .step:nth-child(3) { animation-delay: 0.75s; }
+    .result { animation-delay: 1.1s; }
+    @keyframes in { to { opacity: 1; transform: none; } }
+  }
+
+  /* Sections */
+  section.block { border-top: 1px solid var(--rule); padding: 72px 0; }
+  .split { display: grid; grid-template-columns: 300px 1fr; gap: 48px; }
+  .split h2 { font-family: var(--sans); font-weight: 600; font-size: 1.75rem; letter-spacing: -0.02em; line-height: 1.15; margin: 0; }
+  .split .side { color: var(--muted); font-family: var(--sans); font-size: 0.95rem; margin-top: 12px; }
+  .prose p { margin: 0 0 18px; max-width: 64ch; }
+  .prose ul { margin: 0 0 18px; padding-left: 20px; max-width: 62ch; }
+  .prose li { margin-bottom: 8px; }
+
+  .case + .case { margin-top: 56px; padding-top: 48px; border-top: 1px dashed var(--rule); }
+  .case h3 { font-family: var(--sans); font-weight: 600; font-size: 1.35rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .case .meta { font-family: var(--sans); color: var(--muted); font-size: 0.92rem; margin-bottom: 18px; }
+  .figures { display: flex; gap: 40px; flex-wrap: wrap; margin: 6px 0 22px; font-family: var(--sans); }
+  .figures div { border-left: 3px solid var(--amber); padding-left: 14px; }
+  .figures b { display: block; font-size: 2rem; letter-spacing: -0.02em; line-height: 1.1; }
+  .figures span { color: var(--muted); font-size: 0.92rem; }
+
+  /* Playbook: three parallel plays, not a sequence */
+  .plays { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 8px; }
+  .play h3 { font-family: var(--sans); font-weight: 600; font-size: 1.12rem; margin: 0 0 8px; padding-bottom: 10px; border-bottom: 2px solid var(--teal); }
+  .play p { font-size: 1rem; margin: 0; color: var(--ink); }
+
+  .prose ul.tools { display: flex; flex-wrap: wrap; gap: 10px; font-family: var(--sans); font-size: 0.95rem; padding: 0; list-style: none; margin: 0; }
+  .tools li { background: var(--teal-soft); color: var(--teal); padding: 6px 12px; border-radius: 6px; }
+
+  footer { background: var(--ink); color: var(--mist); padding: 72px 0 48px; margin-top: 24px; }
+  footer h2 { font-family: var(--sans); font-weight: 600; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.03em; margin: 0 0 16px; line-height: 1.05; }
+  footer p { color: #C9D3DB; max-width: 52ch; }
+  footer a { color: var(--mist); }
+  .contact { display: flex; flex-wrap: wrap; gap: 14px 32px; font-family: var(--sans); margin: 28px 0 48px; }
+  .fine { font-family: var(--sans); font-size: 0.85rem; color: #8F9BA5; }
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 40px; padding-bottom: 64px; }
+    .split { grid-template-columns: 1fr; gap: 20px; }
+    .plays { grid-template-columns: 1fr; }
+    .top nav { gap: 14px; }
+  }
+  @media (max-width: 520px) {
+    .top { flex-direction: column; align-items: flex-start; gap: 10px; }
+    section.block { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <strong>Rexbelly Zipagan</strong>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>I build marketing that brings customers back to buy again.</h1>
+          <p class="lede">Customer and lifecycle marketer. I plan, write and automate the programs that turn existing customers into repeat revenue.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work">See the email program</a>
+            <a class="btn btn-ghost" href="mailto:rexbelly.zipagan@gmail.com">Email me</a>
+          </div>
+        </div>
+
+        <div class="flow" aria-label="Lifecycle email flow and its results">
+          <div class="step">
+            <div class="when">Day 0 · New customer</div>
+            <div class="subj">Welcome series</div>
+            <div class="why">Sets expectations and introduces the range beyond the first purchase.</div>
+          </div>
+          <div class="step">
+            <div class="when">Cart left behind</div>
+            <div class="subj">Abandoned-cart flow</div>
+            <div class="why">Recovers buyers who stopped short of checkout.</div>
+          </div>
+          <div class="step">
+            <div class="when">After purchase</div>
+            <div class="subj">Retention flow</div>
+            <div class="why">Brings existing customers back for their next order.</div>
+          </div>
+          <div class="result">
+            <div class="big">25%<small>of store revenue</small></div>
+            <p>Driven by automated flows and email campaigns: over $120K in six months.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="work">
+        <div class="split">
+          <div>
+            <h2>Selected work</h2>
+            <p class="side">Marketing Manager at MSS Ecom Pty Ltd, October 2022 to today.</p>
+          </div>
+          <div class="prose">
+            <article class="case">
+              <h3>A lifecycle email program that earns a quarter of revenue</h3>
+              <div class="meta">Klaviyo · Systeme.io · segmentation · copywriting</div>
+              <div class="figures">
+                <div><b>25%</b><span>of store revenue from email</span></div>
+                <div><b>$120K+</b><span>generated in six months</span></div>
+              </div>
+              <p>I built the automated program behind the store's email revenue: a welcome series for new customers, an abandoned-cart flow, and retention flows that bring past buyers back.</p>
+              <p>Flows are segmented by customer behavior, so each message reaches people at a point where it's relevant. Campaigns sit on top of the automation for launches and promotions.</p>
+              <p>The lesson I'd carry to any customer base: repeat revenue comes from a system that runs every day, not a one-off campaign.</p>
+            </article>
+
+            <article class="case">
+              <h3>Product launches, from page to inbox to ad</h3>
+              <div class="meta">Shopify · GemPages · Funnelish · Meta Ads Manager · Photoshop</div>
+              <p>Each new product gets a launch package: a conversion-focused product page, carousel visuals, launch emails to existing customers, and ad creative uploaded to Meta Ads Manager.</p>
+              <p>I write the copy myself, turning product results and customer outcomes into proof a buyer can trust. Pages are built around visual hierarchy, product storytelling and conversion principles.</p>
+            </article>
+
+            <article class="case">
+              <h3>Running a cross-functional marketing team</h3>
+              <div class="meta">ClickUp · remote team across time zones</div>
+              <p>I coordinate video editors, copywriters, media buyers and social media managers on multi-million-dollar e-commerce projects. I set priorities, assign owners, chase deliverables and close out every task, so campaigns ship on schedule.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="approach">
+        <div class="split">
+          <div>
+            <h2>How I'd build a customer marketing engine</h2>
+            <p class="side">The same principles that grew repeat revenue in e-commerce, applied to a B2B customer base.</p>
+          </div>
+          <div>
+            <div class="plays">
+              <div class="play">
+                <h3>Expansion</h3>
+                <p>Work with Customer Success, Sales and RevOps to find accounts showing expansion signals, then run targeted, always-on programs for cross-sell and new capabilities. Measure through to pipeline.</p>
+              </div>
+              <div class="play">
+                <h3>Customer proof</h3>
+                <p>Start from the evidence Sales needs to win. Find customers with strong results and turn them into stories, quotes, data points and references that are easy to find and use.</p>
+              </div>
+              <div class="play">
+                <h3>Advocacy</h3>
+                <p>Build a healthy pool of willing advocates with Customer Success, and match the right customer to each request without leaning on the same few names.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="background">
+        <div class="split">
+          <div>
+            <h2>Background</h2>
+            <p class="side">15+ years, starting on the customer side.</p>
+          </div>
+          <div class="prose">
+            <p>Before marketing, I spent over ten years in customer support, including five years leading a team of 15 at Sutherland Global Services. I handled retention requests and billing disputes, tracked KPIs against SLA targets, and turned customer problems into clear input for engineering.</p>
+            <p>That's why I see marketing as support for the customer relationship, not a replacement for it.</p>
+            <ul>
+              <li>Marketing Manager / Lead Web &amp; Graphic Designer, MSS Ecom Pty Ltd, 2022 to today</li>
+              <li>Web &amp; Graphic Designer, WNW Group LLC, 2021 to 2022</li>
+              <li>Technical Support Representative, TopData, 2017 to 2021</li>
+              <li>Team Leader / Subject Matter Expert, Sutherland Global Services, 2012 to 2017</li>
+              <li>BS Computer Engineering, Florencio L. Vargas College</li>
+            </ul>
+            <ul class="tools" aria-label="Tools">
+              <li>Klaviyo</li><li>Systeme.io</li><li>Mailchimp</li><li>Shopify</li><li>GemPages</li><li>Funnelish</li><li>Meta Ads Manager</li><li>ClickUp</li><li>Zendesk</li><li>Photoshop</li><li>Canva</li><li>HTML / CSS / JS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Open to customer marketing roles, including relocation.</h2>
+      <p>Based in Baguio City, Philippines, and ready to move for the right team.</p>
+      <div class="contact">
+        <a href="mailto:rexbelly.zipagan@gmail.com">rexbelly.zipagan@gmail.com</a>
+        <a href="https://linkedin.com/in/linkmeinnow">LinkedIn</a>
+        <a href="https://rexbellyzipagan.wixsite.com/portfolio">Design portfolio</a>
+      </div>
+      <p class="fine">© 2026 Rexbelly P. Zipagan</p>
+    </div>
+  </footer>
+</body>
+</html>
